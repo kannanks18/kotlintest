@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <style name="TextAppearance.Test.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+    <item name="fontFamily">@font/bai_jam_semibold</item>
+    <item name="android:textSize">17sp</item>
+
+    <item name="lineHeight">24sp</item>
+    <item name="android:letterSpacing">0.0235</item>
+  </style>
+
+  <style name="TextStyle.Test.Subtitle1" parent="Widget.MaterialComponents.TextView">
+    <item name="android:textAppearance">@style/TextAppearance.Test.Subtitle1</item>
+    <item name="firstBaselineToTopHeight">20sp</item>
+    <item name="lastBaselineToBottomHeight">8sp</item>
+    <item name="android:includeFontPadding">false</item>
+  </style>
+  <!-- Subtitle1 -->
+
+  <!-- Subtitle2 -->
+  <style name="TextAppearance.Test.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+    <item name="fontFamily">@font/bai_jam_medium</item>
+    <item name="android:textSize">14sp</item>
+
+    <item name="lineHeight">20sp</item>
+    <item name="android:letterSpacing">0.0357</item>
+  </style>
+
+  <style name="TextStyle.Test.Subtitle2" parent="Widget.MaterialComponents.TextView">
+    <item name="android:textAppearance">@style/TextAppearance.Test.Subtitle2</item>
+    <item name="firstBaselineToTopHeight">16sp</item>
+    <item name="lastBaselineToBottomHeight">4sp</item>
+    <item name="android:includeFontPadding">false</item>
+  </style>
+
+</resources>

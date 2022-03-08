@@ -1,0 +1,40 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/employeeListFragment">
+
+
+
+    <action
+        android:id="@+id/action_global_to_internetFragment"
+        app:destination="@id/internetFragment"
+        app:popUpTo="@id/mobile_navigation"
+        app:popUpToInclusive="false" />
+
+    <fragment
+        android:id="@+id/internetFragment"
+        tools:layout="@layout/fragment_internet"
+        android:name="com.machine.testkotlin.internet.InternetFragment"
+        android:label="InternetFragment" />
+    <fragment
+        android:id="@+id/employeeListFragment"
+        android:name="com.machine.testkotlin.ui.EmployeeListFragment"
+        android:label="fragment_employee_list"
+        tools:layout="@layout/fragment_employee_list" >
+        <action
+            android:id="@+id/action_employeeListFragment_to_employeeDetailsFragment"
+            app:destination="@id/employeeDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/employeeDetailsFragment"
+        android:name="com.machine.testkotlin.ui.EmployeeDetailsFragment"
+        android:label="fragment_employee_details"
+        tools:layout="@layout/fragment_employee_details" >
+        <argument
+            android:name="employee"
+            app:argType="com.machine.testkotlin.room.model.Employee"
+            />
+    </fragment>
+
+</navigation>
